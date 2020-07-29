@@ -9,7 +9,7 @@
 
 `php artisan vendor:publish --provider=S25\Auth\ThroughAuthServiceProvider`
 
-В файле config/app.php подключить сервис провайдер /S25/Auth/ThroughAuthServiceProvider
+В файле config/app.php подключить сервис провайдер \S25\Auth\ThroughAuthServiceProvider
 
 Далее в файле config/auth.php меняем 
 ```      
@@ -46,7 +46,7 @@
 'providers' => [
     'users' => [
         'driver' => 'redis',
-        'model' => S25/Auth/User::class,
+        'model' => S25\Auth\User::class,
     ],
 ],
 ```
